@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "oswald";
+}
+@font-face {
+    font-family: "oswald";
+    src: url(../css/Oswald-VariableFont_wght.ttf);
+}
+@mixin flexcenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+$colorTextoHeader: white;
+$colorFondo: #FAE3E3;
+$colorTransformText: #d4042b ;
+$colorBorder: #846B8A;
+$colorFondoHeader: #042b94 ;
+
+.menu-index {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 30px;
+    gap: 30px    ;
+    margin-left: 20px;
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
+    .border-menu-1 {
+        @include flexcenter;
+        width: 45vw;
+        height: 45vh;
+        background-image: url(../img/camiseta.png);
+        background-size: cover;
+        border-radius: 10px;
+        box-shadow: 0px 0px 8px $colorTransformText;
+        transition: .2s ;
+        opacity: 0.8;
+        color: transparent;
+        text-decoration: underline;
+        
+    }
+    .border-menu-2{
+        
+        @extend .border-menu-1;
+        background-image: url(../img/footlocker.jpg);
+        
+    }
+    .border-menu-3{
+        @extend .border-menu-1;
+        background-image: url(../img/conjuntos.jpg);
+        
+    }
+    .border-menu-4{
+        @extend .border-menu-1;
+        background-image: url(../img/WNBA.jpg);
+        
+    }
+    .border-menu-1:hover {
+        box-shadow: 0px 0px black;
+        opacity: 1;
+        color: $colorTransformText;
+        font-size: 2.5rem;
+    }
+    
+}
+
+
+@media screen and (max-width:800px) {
+   
+    .menu-index {
+        grid-template-columns: 1fr;
+    }
+    
+    .border-menu-1 {
+        width: 90vw !important;
+        opacity: 1 !important;
+        color: $colorTransformText !important;
+    }
+    
+}
+
+
+@-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+  

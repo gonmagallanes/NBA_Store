@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "oswald";
+  src: url(../css/Oswald-VariableFont_wght.ttf);
+}
+header {
+  animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.header-index {
+  display: flex;
+  background-color: #042b94;
+  width: 100%;
+  height: 50px;
+  justify-content: space-around;
+  font-family: "oswald";
+  color: white;
+  font-size: 2rem;
+}
+
+.header-mobile {
+  display: none;
+  background-color: #042b94;
+  width: 100%;
+  height: 50px;
+  justify-content: space-around;
+  font-family: "oswald";
+  color: white;
+  font-size: 2rem;
+}
+
+.header-camisetas {
+  display: flex;
+  background-color: #042b94;
+  width: 100vw;
+  height: 50px;
+  justify-content: space-evenly;
+  font-family: "oswald";
+  color: white;
+  font-size: 2rem;
+}
+.header-camisetas-logo {
+  display: flex;
+  animation: roll-in-blurred-left 1.5s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+@media screen and (max-width: 750px) {
+  .header-index {
+    display: none;
+  }
+  .header-mobile {
+    display: flex;
+  }
+}
+@keyframes roll-in-blurred-left {
+  0% {
+    transform: translateX(-1000px) rotate(-720deg);
+    filter: blur(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "oswald";
+}
+
+@font-face {
+  font-family: "oswald";
+  src: url(../css/Oswald-VariableFont_wght.ttf);
+}
+.menu-index {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-top: 30px;
+  gap: 30px;
+  margin-left: 20px;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.menu-index .border-menu-1, .menu-index .border-menu-4, .menu-index .border-menu-3, .menu-index .border-menu-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45vw;
+  height: 45vh;
+  background-image: url(../img/camiseta.png);
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px #d4042b;
+  transition: 0.2s;
+  opacity: 0.8;
+  color: transparent;
+  text-decoration: underline;
+}
+.menu-index .border-menu-2 {
+  background-image: url(../img/footlocker.jpg);
+}
+.menu-index .border-menu-3 {
+  background-image: url(../img/conjuntos.jpg);
+}
+.menu-index .border-menu-4 {
+  background-image: url(../img/WNBA.jpg);
+}
+.menu-index .border-menu-1:hover, .menu-index .border-menu-2:hover, .menu-index .border-menu-3:hover, .menu-index .border-menu-4:hover {
+  box-shadow: 0px 0px black;
+  opacity: 1;
+  color: #d4042b;
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .menu-index {
+    grid-template-columns: 1fr;
+  }
+  .border-menu-1, .menu-index .border-menu-2, .menu-index .border-menu-3, .menu-index .border-menu-4 {
+    width: 90vw !important;
+    opacity: 1 !important;
+    color: #d4042b !important;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "oswald";
+}
+
+@font-face {
+  font-family: "oswald";
+  src: url(../css/Oswald-VariableFont_wght.ttf);
+}
+.footer-index {
+  display: flex;
+  background-image: linear-gradient(to left, white, #506cac, #d4042b, #d0d7e6, #042b94);
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+.footer-index .footer-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+  .footer-text {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */
