@@ -136,10 +136,10 @@ header {
   .menu-index {
     grid-template-columns: 1fr;
   }
-  .border-menu-1, .menu-index .border-menu-2, .menu-index .border-menu-3, .menu-index .border-menu-4 {
-    width: 90vw !important;
-    opacity: 1 !important;
-    color: #d4042b !important;
+  .menu-index .border-menu-1, .menu-index .border-menu-2, .menu-index .border-menu-3, .menu-index .border-menu-4 {
+    width: 90vw;
+    opacity: 1;
+    color: #d4042b;
   }
 }
 @keyframes fade-in {
@@ -170,6 +170,8 @@ header {
   height: 100%;
 }
 .footer-index .footer-text {
+  text-align: center;
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -177,7 +179,7 @@ header {
 }
 
 @media screen and (max-width: 800px) {
-  .footer-text {
+  .footer-index .footer-text {
     font-size: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */

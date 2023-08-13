@@ -75,13 +75,15 @@ $colorFondoHeader: #042b94 ;
    
     .menu-index {
         grid-template-columns: 1fr;
+
+        .border-menu-1 {
+            width: 90vw ;
+            opacity: 1 ;
+            color: $colorTransformText ;
+        }
     }
     
-    .border-menu-1 {
-        width: 90vw !important;
-        opacity: 1 !important;
-        color: $colorTransformText !important;
-    }
+    
     
 }
 
