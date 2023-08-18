@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    transition: .5s ;
 }
 @font-face {
     font-family: "oswald";
@@ -14,9 +15,9 @@
     justify-content: center;
 }
 $colorTextoHeader: white;
-$colorFondo: #FAE3E3;
-$colorTexto: white;
-$colorBorder: #846B8A;
+$colorNBA:  #506cac;
+$colorTransformText: #d4042b ;
+$colorNBA2  : #d0d7e6;
 $colorFondoHeader: #042b94 ;
 
 header {
@@ -30,9 +31,8 @@ header {
     height: 50px;
     justify-content: space-around;
     font-family: "oswald";
-    color: $colorTexto;
+    color: $colorTextoHeader;
     font-size: 2rem;
-    
     
 }
 .header-mobile {
@@ -42,7 +42,7 @@ header {
     height: 50px;
     justify-content: space-around;
     font-family: "oswald";
-    color: $colorTexto;
+    color: $colorTextoHeader;
     font-size: 2rem;
 }
 .header-camisetas {
@@ -62,15 +62,69 @@ header {
     }
 }
 
+
+.header-sm {
+  
+  display: none;
+  width: 100%;
+  background-color: $colorFondoHeader;
+  font-size: 2rem;
+  height: 50px;
+  color: $colorTextoHeader;
+  text-align:left ;
+  padding-left: 40px;
+  transition: 0.5s;
+}
+
+.submenu {
+  
+  text-align: center;
+  display: none;
+  list-style-type: none;
+  flex-direction: row;
+  gap: 1rem ;
+  font-size: 1rem;
+  background-color: $colorFondoHeader;
+  color: $colorTextoHeader;
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  border: $colorTransformText 2px solid;
+  border-radius: 10px;
+  z-index: 1;
+  
+
+
+  .submenu-text:hover {
+    transform: scale(1.5);
+    color: $colorTransformText;
+  }
+  
+}
+
+
+
+.header-sm:hover .submenu {
+  
+  display: block;
+
+}
+
+
 @media screen and (max-width:750px) {
     
-    .header-index {
-        display: none;
-    }
+  .header-index {
+      display: none;
+  }
     
-    .header-mobile {
-        display: flex;
-    }
+  .header-mobile {
+      display: flex;
+  }
+
+  .header-sm {
+    display: flex;
+  }
+  
 }
 
 

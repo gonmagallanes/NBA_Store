@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  transition: 0.5s;
 }
 
 @font-face {
@@ -50,11 +51,51 @@ header {
   animation: roll-in-blurred-left 1.5s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
 
+.header-sm {
+  display: none;
+  width: 100%;
+  background-color: #042b94;
+  font-size: 2rem;
+  height: 50px;
+  color: white;
+  text-align: left;
+  padding-left: 40px;
+  transition: 0.5s;
+}
+
+.submenu {
+  text-align: center;
+  display: none;
+  list-style-type: none;
+  flex-direction: row;
+  gap: 1rem;
+  font-size: 1rem;
+  background-color: #042b94;
+  color: white;
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  border: #d4042b 2px solid;
+  border-radius: 10px;
+  z-index: 1;
+}
+.submenu .submenu-text:hover {
+  transform: scale(1.5);
+  color: #d4042b;
+}
+
+.header-sm:hover .submenu {
+  display: block;
+}
+
 @media screen and (max-width: 750px) {
   .header-index {
     display: none;
   }
   .header-mobile {
+    display: flex;
+  }
+  .header-sm {
     display: flex;
   }
 }
@@ -115,6 +156,7 @@ header {
   opacity: 0.8;
   color: transparent;
   text-decoration: underline;
+  font-size: 3rem;
 }
 .menu-index .border-menu-2 {
   background-image: url(../img/footlocker.jpg);
@@ -130,6 +172,14 @@ header {
   opacity: 1;
   color: #d4042b;
   font-size: 2.5rem;
+}
+
+.off-la {
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 50px;
+  font-size: 2rem;
 }
 
 @media screen and (max-width: 800px) {
