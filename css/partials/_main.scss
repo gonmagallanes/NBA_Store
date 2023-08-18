@@ -21,6 +21,18 @@ $colorTransformText: #d4042b ;
 $colorNBA2  : #d0d7e6;
 $colorFondoHeader: #042b94 ;
 
+.link{
+    text-decoration: none;
+}
+
+.flechaarriba {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 100;
+    color: $colorTransformText;
+}
 
 .menu-index {
 

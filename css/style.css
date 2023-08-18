@@ -10,6 +10,10 @@
   font-family: "oswald";
   src: url(../css/Oswald-VariableFont_wght.ttf);
 }
+.link {
+  text-decoration: none;
+}
+
 header {
   animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -18,7 +22,7 @@ header {
   display: flex;
   background-color: #042b94;
   width: 100%;
-  height: 50px;
+  height: 55px;
   justify-content: space-around;
   font-family: "oswald";
   color: white;
@@ -29,7 +33,7 @@ header {
   display: none;
   background-color: #042b94;
   width: 100%;
-  height: 50px;
+  height: 55px;
   justify-content: space-around;
   font-family: "oswald";
   color: white;
@@ -40,7 +44,7 @@ header {
   display: flex;
   background-color: #042b94;
   width: 100%;
-  height: 50px;
+  height: 55px;
   justify-content: space-evenly;
   font-family: "oswald";
   color: white;
@@ -49,6 +53,15 @@ header {
 .header-camisetas-logo {
   display: flex;
   animation: roll-in-blurred-left 1.5s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+.header-camisetas-text {
+  color: white;
+}
+
+.header-camisetas-text:hover {
+  color: #d4042b;
+  transform: scale(1.2);
 }
 
 .header-sm {
@@ -102,6 +115,8 @@ header {
   }
   .header-sm {
     display: flex;
+    justify-content: left;
+    gap: 40px;
   }
   .header-camisetas {
     display: none;
@@ -141,6 +156,19 @@ header {
   font-family: "oswald";
   src: url(../css/Oswald-VariableFont_wght.ttf);
 }
+.link {
+  text-decoration: none;
+}
+
+.flechaarriba {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 100;
+  color: #d4042b;
+}
+
 .menu-index {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -336,6 +364,16 @@ header {
   align-items: center;
   justify-content: center;
   font-size: 2rem;
+}
+
+.footer-cami {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  background-color: #d0d7e6;
 }
 
 @media screen and (max-width: 800px) {
