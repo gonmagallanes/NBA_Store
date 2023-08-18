@@ -39,7 +39,7 @@ header {
 .header-camisetas {
   display: flex;
   background-color: #042b94;
-  width: 100vw;
+  width: 100%;
   height: 50px;
   justify-content: space-evenly;
   font-family: "oswald";
@@ -62,6 +62,7 @@ header {
   padding-left: 40px;
   transition: 0.5s;
   margin-bottom: 0;
+  z-index: 100;
 }
 
 .submenu {
@@ -80,11 +81,12 @@ header {
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0px 0px 8px #d4042b;
-  z-index: 1;
+  z-index: 100;
 }
 .submenu .submenu-text:hover {
   transform: scale(1.5);
   color: #d4042b;
+  z-index: 100;
 }
 
 .header-sm:hover .submenu {
@@ -183,18 +185,81 @@ header {
 .off-la {
   background-color: black;
   color: white;
-  text-align: center;
+  width: 100%;
   height: 80px;
   font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.carousel-size {
-  width: 300px;
-  background-color: #d0d7e6;
+.off-hover {
+  animation-name: latir;
+  animation-delay: 2s;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.camisetas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.camisetas .cam-lakers {
+  background-image: radial-gradient(circle, purple, gold, purple);
+  width: 22vw;
+  border: 2px solid goldenrod;
+}
+.camisetas .cam-celtics {
+  background-image: radial-gradient(circle, green, white, green);
+  width: 22vw;
+  border: 2px solid greenyellow;
+}
+.camisetas .cam-gsw {
+  background-image: radial-gradient(circle, yellow, white, blue);
+  width: 22vw;
+  border: 2px solid goldenrod;
+}
+.camisetas .cam-lac {
+  background-image: radial-gradient(circle, red, white, blue);
+  width: 22vw;
+  border: 2px solid red;
+}
+
+.main-mobile {
+  display: none;
   border: 1.5px solid #042b94;
   border-radius: 5px;
+  width: 70vw;
+  left: 13vw;
 }
 
+.lakers {
+  background-image: radial-gradient(circle, purple, gold, purple);
+}
+
+.celtics {
+  background-image: radial-gradient(circle, green, white, green);
+}
+
+.main-mobile:hover {
+  box-shadow: 0px 0px 8px #042b94;
+}
+
+@keyframes latir {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(5deg);
+  }
+  66% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 @media screen and (max-width: 800px) {
   .menu-index {
     grid-template-columns: 1fr;
@@ -203,6 +268,16 @@ header {
     width: 90vw;
     opacity: 1;
     color: #d4042b;
+  }
+  .off-la {
+    font-size: 1.5rem;
+  }
+  .main-mobile {
+    display: inline-block;
+    position: relative;
+  }
+  .main-pc {
+    display: none;
   }
 }
 @keyframes fade-in {

@@ -78,18 +78,82 @@ $colorFondoHeader: #042b94 ;
 .off-la {
     background-color: black;
     color: $colorTextoHeader;
-    text-align: center;
+    width: 100%;
     height: 80px;
     font-size: 2rem;
+    @include flexcenter;
+}
+.off-hover {
+    animation-name: latir;
+    animation-delay: 2s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.camisetas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+
+    .cam-lakers {
+        background-image: radial-gradient(circle, purple, gold, purple);
+        width: 22vw;
+        border: 2px solid goldenrod;
+    }
+
+    .cam-celtics {
+        background-image: radial-gradient(circle, green, white, green);
+        width: 22vw;
+        border: 2px solid greenyellow;
+    }
+    .cam-gsw {
+        background-image: radial-gradient(circle, yellow,white, blue);
+        width: 22vw;
+        border: 2px solid goldenrod;
+    }
+    .cam-lac {
+        background-image: radial-gradient(circle, red, white, blue);
+        width: 22vw;
+        border: 2px solid red;
+    }
 
 }
 
 
-.carousel-size {
-    width: 300px;
-    background-color: $colorNBA2;
+.main-mobile {
+    display: none;
+    
     border: 1.5px solid $colorFondoHeader;
     border-radius: 5px;
+    width: 70vw;
+    left: 13vw;
+}
+
+.lakers {
+    background-image: radial-gradient(circle, purple, gold, purple);
+}
+.celtics {
+    background-image: radial-gradient(circle, green, white, green);
+}
+
+.main-mobile:hover {
+    box-shadow: 0px 0px 8px $colorFondoHeader;
+}
+
+@keyframes latir {
+    0% {
+        transform: rotate(0deg);
+    }
+    33% {
+        transform: rotate(5deg);
+    }
+    66% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 @media screen and (max-width:800px) {
@@ -104,8 +168,19 @@ $colorFondoHeader: #042b94 ;
         }
     }
 
+    .off-la{
+        font-size: 1.5rem;
+    }
+    .main-mobile {
+        display: inline-block;
+        position: relative;
 
+    }
 
+    .main-pc {
+        display: none;
+    }
+    
 }
 
 
