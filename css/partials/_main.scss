@@ -4,6 +4,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: "oswald";
+    
 }
 @font-face {
     font-family: "oswald";
@@ -15,13 +16,14 @@
     justify-content: center;
 }
 $colorTextoHeader: white;
-$colorFondo: #FAE3E3;
+$colorNBA:  #506cac;
 $colorTransformText: #d4042b ;
-$colorBorder: #846B8A;
+$colorNBA2  : #d0d7e6;
 $colorFondoHeader: #042b94 ;
 
+
 .menu-index {
-    
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -44,45 +46,54 @@ $colorFondoHeader: #042b94 ;
         color: transparent;
         text-decoration: underline;
         font-size: 3rem
-       
-        
+
+
     }
     .border-menu-2{
-        
+
         @extend .border-menu-1;
         background-image: url(../img/footlocker.jpg);
-        
+
     }
     .border-menu-3{
         @extend .border-menu-1;
         background-image: url(../img/conjuntos.jpg);
-        
+
     }
     .border-menu-4{
         @extend .border-menu-1;
         background-image: url(../img/WNBA.jpg);
-        
+
     }
-    
+
     .border-menu-1:hover {
         box-shadow: 0px 0px black;
         opacity: 1;
         color: $colorTransformText;
         font-size: 2.5rem;
     }
-    
+
 }
 
 .off-la {
     background-color: black;
     color: $colorTextoHeader;
     text-align: center;
-    height: 50px;
+    height: 80px;
     font-size: 2rem;
+
+}
+
+
+.carousel-size {
+    width: 300px;
+    background-color: $colorNBA2;
+    border: 1.5px solid $colorFondoHeader;
+    border-radius: 5px;
 }
 
 @media screen and (max-width:800px) {
-   
+
     .menu-index {
         grid-template-columns: 1fr;
 
@@ -92,9 +103,9 @@ $colorFondoHeader: #042b94 ;
             color: $colorTransformText ;
         }
     }
-    
-    
-    
+
+
+
 }
 
 
@@ -114,4 +125,3 @@ $colorFondoHeader: #042b94 ;
       opacity: 1;
     }
 }
-  
