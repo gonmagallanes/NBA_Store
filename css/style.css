@@ -234,12 +234,24 @@ header {
   left: 13vw;
 }
 
+.equipos-camisetas {
+  display: none;
+}
+
 .lakers {
   background-image: radial-gradient(circle, purple, gold, purple);
 }
 
 .celtics {
   background-image: radial-gradient(circle, green, white, green);
+}
+
+.gsw {
+  background-image: radial-gradient(circle, white, yellow, blue);
+}
+
+.clippers {
+  background-image: radial-gradient(circle, red, white, blue);
 }
 
 .main-mobile:hover {
@@ -260,6 +272,11 @@ header {
     transform: rotate(0deg);
   }
 }
+@media screen and (min-width: 800px) {
+  .hr-min {
+    display: none;
+  }
+}
 @media screen and (max-width: 800px) {
   .menu-index {
     grid-template-columns: 1fr;
@@ -268,6 +285,11 @@ header {
     width: 90vw;
     opacity: 1;
     color: #d4042b;
+  }
+  .equipos-camisetas {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
   }
   .off-la {
     font-size: 1.5rem;
