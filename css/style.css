@@ -286,6 +286,44 @@ header {
   box-shadow: 0px 0px 8px #042b94;
 }
 
+.tarjetas {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+}
+
+.tarjeta-1, .tarjeta-3, .tarjeta-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 20%;
+  height: 200px;
+  border: 1px solid black;
+  background-color: goldenrod;
+}
+
+.tarjeta-2 {
+  background-color: rgb(175, 10, 10);
+}
+
+.tarjeta-3 {
+  background-color: rgb(4, 133, 0);
+}
+
+.tarjeta-1, .tarjeta-2, .tarjeta-3 {
+  width: 15%;
+}
+
+.tarjeta-2 {
+  width: 30%;
+}
+
+.tarjeta-3 {
+  width: 45%;
+}
+
 .fila-zapa {
   display: flex;
   align-items: center;
@@ -340,6 +378,29 @@ header {
 
 .conjuntos-png:hover {
   box-shadow: 0px 0px 0px #d0d7e6;
+}
+
+.dato {
+  padding: 50px;
+  font-family: "oswald";
+}
+
+.sabias2 {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.sabias-text:nth-child(3n+1) {
+  background-color: red;
+}
+
+.sabias-text {
+  color: transparent;
+  display: flex;
+  justify-content: center;
+  margin: 2px;
+  border: solid 1px black;
 }
 
 .sabias {

@@ -163,6 +163,39 @@ $colorFondoHeader: #042b94 ;
     box-shadow: 0px 0px 8px $colorFondoHeader;
 }
 
+.tarjetas {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 2vw   ;
+}
+
+.tarjeta-1{
+    @include flexcenter;
+    text-align: center;
+    width :20%;
+    height: 200px;
+    border: 1px solid black;
+    background-color: goldenrod;
+    
+}
+
+.tarjeta-2 {
+    @extend .tarjeta-1;
+    background-color: rgb(175, 10, 10);
+}
+.tarjeta-3 {
+    @extend .tarjeta-1;
+    background-color: rgb(4, 133, 0);
+}
+
+@for $numero from 1 through 3 {
+    .tarjeta-#{$numero} {
+        width: $numero *15%
+    }
+
+}
+
 .fila-zapa {
     @include flexcenter;
     flex-direction: column;
@@ -226,7 +259,26 @@ $colorFondoHeader: #042b94 ;
     box-shadow: 0px 0px 0px $colorNBA2;
 }
 
-
+.dato {
+    padding: 50px;
+    font-family: "oswald";
+}
+.sabias2 {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    
+}
+.sabias-text:nth-child(3n+1) {
+    background-color: red;
+}
+.sabias-text {
+    color: transparent;
+    display: flex;
+    justify-content: center;
+    margin: 2px;
+    border: solid 1px black;
+}
 .sabias{
     display: flex;
     width: 100%;
