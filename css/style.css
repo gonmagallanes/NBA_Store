@@ -286,6 +286,37 @@ header {
   box-shadow: 0px 0px 8px #042b94;
 }
 
+.fila-zapa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 50vw;
+}
+.fila-zapa .zapa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  background-color: #d0d7e6;
+  margin-bottom: 40px;
+  border: #506cac 1.5px solid;
+  border-radius: 30px;
+}
+.fila-zapa .zapa-text {
+  text-align: center;
+}
+.fila-zapa .btn-compra {
+  width: 80%;
+  height: 40px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
 @keyframes latir {
   0% {
     transform: rotate(0deg);
@@ -313,6 +344,9 @@ header {
     width: 90vw;
     opacity: 1;
     color: #d4042b;
+  }
+  .zapa-text {
+    font-size: 1.5rem;
   }
   .equipos-camisetas {
     display: flex;

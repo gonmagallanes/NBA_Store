@@ -163,6 +163,43 @@ $colorFondoHeader: #042b94 ;
     box-shadow: 0px 0px 8px $colorFondoHeader;
 }
 
+.fila-zapa {
+    @include flexcenter;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 50vw;
+    
+
+    .zapa {
+        @include flexcenter;
+        flex-direction: column;
+        width: 80%;
+        background-color: $colorNBA2;
+        margin-bottom: 40px;
+        border: $colorNBA 1.5px solid;
+        border-radius: 30px;
+
+        &-text {
+            text-align: center;
+        }
+    }
+
+    .btn-compra {
+        width: 80%;
+        height: 40px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        margin-bottom: 30px;
+    }
+
+
+}
+
+
+
+
+
 @keyframes latir {
     0% {
         transform: rotate(0deg);
@@ -182,8 +219,8 @@ $colorFondoHeader: #042b94 ;
     .hr-min {
         display: none;
     }
+   
 }
-
 @media screen and (max-width:800px) {
 
     .menu-index {
@@ -194,6 +231,11 @@ $colorFondoHeader: #042b94 ;
             opacity: 1 ;
             color: $colorTransformText ;
         }
+    }
+
+    .zapa-text {
+        font-size: 1.5rem;
+        
     }
 
     .equipos-camisetas {

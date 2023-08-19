@@ -24,6 +24,8 @@ $colorFondoHeader: #042b94 ;
   text-decoration: none;
 }
 
+
+
 header {
     -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -66,6 +68,8 @@ header {
 	        animation: roll-in-blurred-left 1.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
     }
 }
+
+
 
 .header-camisetas-text {
   color: white;
