@@ -175,14 +175,22 @@ $colorFondoHeader: #042b94 ;
         flex-direction: column;
         width: 80%;
         background-color: $colorNBA2;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         border: $colorNBA 1.5px solid;
         border-radius: 30px;
 
         &-text {
             text-align: center;
         }
+
+        &-precios {
+            
+            width: 80%;
+            text-align: right;
+        }
     }
+
+    
 
     .btn-compra {
         width: 80%;
@@ -190,7 +198,7 @@ $colorFondoHeader: #042b94 ;
         background-color: black;
         color: white;
         border-radius: 5px;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
 
 
@@ -198,7 +206,65 @@ $colorFondoHeader: #042b94 ;
 
 
 
+.conjuntos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    margin-top: 50px;
+    row-gap: 30px   ;
+    column-gap: 30px;
+}
 
+.conjuntos-png {
+    width: 100%;
+    box-shadow: 0px 0px 8px $colorTransformText;
+    border-radius: 10px;
+    background-color: $colorNBA2;
+}
+
+.conjuntos-png:hover {
+    box-shadow: 0px 0px 0px $colorNBA2;
+}
+
+
+.sabias{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.imgderecha {
+    display: inline-block;
+    position: relative;
+    width: 40%;
+    color: white;
+    padding-left:10px ;
+    margin-top: 50px;
+    height: 150px;
+    background-color: $colorFondoHeader;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    clip-path: polygon(0 100%, 0 0, 70% 0, 100% 100%);
+    
+}
+.imgizquierda {
+    display: inline-block;
+    position: relative;
+    color: white;
+    padding-right:10px ;
+    width: 40%;
+    height: 150px;
+    background-color: $colorFondoHeader;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    clip-path: polygon(30% 100%, 0 0, 100% 0, 100% 100%);
+    text-align: right;
+    
+}
+
+.wnba-title {
+    margin-top: 50px;
+}
 
 @keyframes latir {
     0% {
@@ -255,6 +321,10 @@ $colorFondoHeader: #042b94 ;
 
     .main-pc {
         display: none;
+    }
+
+    .conjuntos-grid {
+        grid-template-columns: 1fr;
     }
     
 }

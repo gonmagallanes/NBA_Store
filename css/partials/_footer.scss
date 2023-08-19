@@ -20,30 +20,50 @@ $colorTransformText: #d4042b ;
 $colorNBA2  : #d0d7e6;
 $colorFondoHeader: #042b94 ;
 
-.footer-index {
 
+.footer-final {
+    margin-top: 30px;
     display: flex;
-    background-image: linear-gradient(to left, $colorTextoHeader, $colorNBA, $colorTransformText, $colorNBA2, $colorFondoHeader);
-    color: $colorTextoHeader;
+    align-items: center;
     width: 100%;
-    height: 100%;
-    
-    .footer-text    {
-        text-align: center;
-        padding: 20px;
-        @include flexcenter;
-        font-size: 2rem;
-    }
+    height: 200px;
+    background-color: $colorNBA2;
+
 }
 
-.footer-cami {
-    @include flexcenter;
-    text-align: center;
-    
+.footer-redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    row-gap: 20px   ;
+    padding-left: 20px;
     width: 100%;
-    padding: 20px;
-    background-color: $colorNBA2;
+    
+    .redes {
+        border: $colorNBA 1px solid;
+        padding: 5px;
+        width: 95%;
+        color: white;
+    }
+
 }
+
+$coloresRedes: (
+    twitter: rgb(0, 119, 255),
+    facebook: rgb(26, 14, 201),
+    instagram: rgb(104, 0, 57),
+);
+
+@each $redSocial, $colorDeRed in $coloresRedes {
+
+    .red-#{$redSocial} {
+        background-color: $colorDeRed;
+    }
+
+}
+
+
+
 
 @media screen and (max-width:800px) {
    
