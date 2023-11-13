@@ -25,6 +25,7 @@ $colorFondoHeader: #042b94 ;
     text-decoration: none;
 }
 
+
 .flechaarriba {
     display: block;
     position: fixed;
@@ -285,6 +286,8 @@ $colorFondoHeader: #042b94 ;
     justify-content: center;
 }
 
+
+
 .imgderecha {
     display: inline-block;
     position: relative;
@@ -297,6 +300,7 @@ $colorFondoHeader: #042b94 ;
     padding-top: 50px;
     margin-bottom: 50px;
     clip-path: polygon(0 100%, 0 0, 70% 0, 100% 100%);
+    
     
 }
 .imgizquierda {
@@ -313,6 +317,8 @@ $colorFondoHeader: #042b94 ;
     text-align: right;
     
 }
+
+
 
 .wnba-title {
     margin-top: 50px;
@@ -337,6 +343,8 @@ $colorFondoHeader: #042b94 ;
     .hr-min {
         display: none;
     }
+
+   
    
 }
 @media screen and (max-width:800px) {
@@ -379,6 +387,13 @@ $colorFondoHeader: #042b94 ;
         grid-template-columns: 1fr;
     }
     
+    .tarjeta-1{
+        font-size: 0.8rem;
+    }
+
+    .sabiasqueText {
+        font-size: 1rem;
+    }
 }
 
 

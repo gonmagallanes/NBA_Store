@@ -82,7 +82,7 @@ header {
   text-align: center;
   display: none;
   position: absolute;
-  top: 20px;
+  top: 50px;
   list-style-type: none;
   flex-direction: row;
   gap: 1rem;
@@ -491,6 +491,12 @@ header {
   }
   .conjuntos-grid {
     grid-template-columns: 1fr;
+  }
+  .tarjeta-1, .tarjeta-2, .tarjeta-3 {
+    font-size: 0.8rem;
+  }
+  .sabiasqueText {
+    font-size: 1rem;
   }
 }
 @keyframes fade-in {
